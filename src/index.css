@@ -23,3 +23,22 @@ body {
   color: rgb(252, 247, 247);
   font-weight: 900;
 }
+
+.customerSupport {
+  animation-name: customerSupport;
+  animation-duration: infinite;
+}
+@keyframes customerSupport {
+  0% {
+    border: green;
+  }
+  0% {
+    border: whitesmoke;
+  }
+  0% {
+    border: greenyellow;
+  }
+  0% {
+    border: whitesmoke;
+  }
+}
