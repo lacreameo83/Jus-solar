@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: small;
+}
+
+.sliderOutput-1 {
+  background-image: url("https://cdn.britannica.com/91/222691-050-E8BDF226/installing-solar-panels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sliderOutput-2 {
+  background-image: url("https://sunking.com/wp-content/uploads/2022/10/Home-8000-Spec-Sheet_letter-05.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.HomeRenewed {
+  stroke-width: 100px;
+  /* font-size: 50px; */
+  color: rgb(252, 247, 247);
+  font-weight: 900;
+}
