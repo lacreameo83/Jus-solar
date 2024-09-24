@@ -33,12 +33,6 @@ function SimpleSlider() {
                 shop Now
               </Button>
             </Link>
-
-            <Button variant="contained">
-              <a href="https://wa.me/2349032351284">
-                <WhatsAppIcon />
-              </a>
-            </Button>
           </div>
           {/* second slider */}
         </div>
@@ -52,13 +46,6 @@ function SimpleSlider() {
                 shop Now
               </Button>
             </Link>
-
-            <Button variant="contained">
-              <a href="https://wa.me/2349032351284">
-                <WhatsAppIcon />
-              </a>
-            </Button>
-           
           </div>
         </div>
       </Slider>

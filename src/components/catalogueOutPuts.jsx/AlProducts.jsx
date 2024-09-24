@@ -6,7 +6,7 @@ import Inverter from "./Inverter";
 function AlProducts() {
   return (
     <div className="grid grid-cols-2  h-fit gap-5 sm:grid-cols-4">
-      <div className="shadow-lg w-[20vw] h-[50vh] relative group">
+      <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         <div>
           {data
             .filter((el) => el.id === 5)
@@ -28,7 +28,7 @@ function AlProducts() {
         </div>
       </div>
       {/* 2 */}
-      <div className="shadow-lg w-[20vw] h-[50vh] relative group">
+      <div className="shadow-lg w-[45vw] h-[50vh] relative group sm:w-[20vw]">
         {data
           .filter((el) => el.id === 10)
           .map((el) => (
@@ -45,7 +45,7 @@ function AlProducts() {
         </div>
       </div>
       {/* 3 */}
-      <div className="shadow-lg w-[20vw] h-[50vh] relative group">
+      <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         {data
           .filter((el) => el.id === 14)
           .map((el) => (
@@ -64,7 +64,7 @@ function AlProducts() {
         </div>
       </div>
       {/* 4 */}
-      <div className="shadow-lg w-[20vw] h-[50vh] relative group">
+      <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         {data
           .filter((el) => el.id === 18)
           .map((el) => (
@@ -83,7 +83,7 @@ function AlProducts() {
         </div>
       </div>
       {/* 5 */}
-      <div className="shadow-lg h-[50vh] w-[20vw] relative group">
+      <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         {data
           .filter((el) => el.id === 22)
           .map((el) => (
@@ -102,7 +102,7 @@ function AlProducts() {
         </div>
       </div>
       {/* 6 */}
-      <div className="shadow-lg h-[50vh] w-[20vw] relative group">
+      <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         {data
           .filter((el) => el.id === 25)
           .map((el) => (
@@ -120,7 +120,7 @@ function AlProducts() {
           </Button>
         </div>
       </div>
-      <div className="shadow-lg h-[50vh] w-[20vw] relative group">
+      <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         {data
           .filter((el) => el.id === 20)
           .map((el) => (
