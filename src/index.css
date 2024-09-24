@@ -26,19 +26,23 @@ body {
 
 .customerSupport {
   animation-name: customerSupport;
-  animation-duration: infinite;
+  animation-duration: 5s;g
+  animation-iteration-count: infinite;
 }
 @keyframes customerSupport {
   0% {
-    border: green;
+    border: 2px solid green;
   }
-  0% {
-    border: whitesmoke;
+  25% {
+    border: 2px solid whitesmoke;
   }
-  0% {
-    border: greenyellow;
+  50% {
+    border: 2px solid greenyellow;
   }
-  0% {
-    border: whitesmoke;
+  75% {
+    border: 2px solid whitesmoke;
+  }
+  100% {
+    border: 2px solid green;
   }
 }
