@@ -26,7 +26,7 @@ body {
 
 .customerSupport {
   animation-name: customerSupport;
-  animation-duration: 5s;g
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 @keyframes customerSupport {
