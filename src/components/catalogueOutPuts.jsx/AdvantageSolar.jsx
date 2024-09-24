@@ -31,14 +31,22 @@ function AdvantageSolar() {
         </div>
         <div>
           <EmailTemplate
-            logo={<EmailIcon />}
+            logo={
+              <a href="mailto:jussolar209@gmail.com">
+                <EmailIcon />
+              </a>
+            }
             location="Email"
             address="JusSolar209@email.com"
           />
         </div>
         <div>
           <EmailTemplate
-            logo={<FacebookIcon />}
+            logo={
+              <a href="https://wa.me/2349032351284">
+                <FacebookIcon />
+              </a>
+            }
             location="Facebook"
             address="Jus Solar"
           />

@@ -24,7 +24,7 @@ function ContactUs() {
             </div>
             <div>
               <h2>Email</h2>
-              <p>jusSolar209@gmail.com</p>
+              <p>jussolar209@gmail.com</p>
             </div>
             <div>
               <h2>Phone</h2>
@@ -49,10 +49,14 @@ function ContactUs() {
                 </a>
               </Button>
               <Button variant="contained" color="success">
-                <CallIcon />
+                <a href="tel:2349032351284">
+                  <CallIcon />
+                </a>
               </Button>
               <Button variant="contained" color="success">
-                <EmailIcon />
+                <a href="mailto:jussolar209@gmail.com">
+                  <EmailIcon />
+                </a>
               </Button>
             </div>
           </div>
