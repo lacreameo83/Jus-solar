@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavSection from "./NavSection";
 import { Button } from "@mui/material";
+import FacebookMessenger from "../FacebookMessenger";
 
 function Nav() {
   const [CustomerSupport, setCoustomerSupport] = useState(false);
@@ -26,6 +27,7 @@ function Nav() {
       </div>
       {CustomerSupport && (
         <div className="h-[30vh] w-[30vw] absolute bg-white z-30 right-2 mt-2 border-[3px] border-green-400">
+          <FacebookMessenger />
           <div className="flex items-center justify-center my-3 flex-col">
             <img
               onClick={handleCustomers}
