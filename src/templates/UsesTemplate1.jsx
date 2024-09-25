@@ -9,8 +9,12 @@ function UsesTemplate1({ Heading, Purpose, image, Link }) {
           <p>{Purpose}</p>
           <p>{Link}</p>
         </div>
-        <div className="solargenarator h-[30vh] w-[20vw] ">
-          <img className="h-[30vh] w-[30vw] object-cover" src={image} />
+        <div className="solargenarator shadow-lg h-[30vh] w-[20vw] ">
+          <img
+            className="h-[28vh] w-[25vw] shadow-md m-2 mx-auto object-cover"
+            src={image}
+            alt="image"
+          />
         </div>
       </div>
     </div>

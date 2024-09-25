@@ -5,7 +5,7 @@ import Inverter from "./Inverter";
 
 function AlProducts() {
   return (
-    <div className="grid grid-cols-2  h-fit gap-5 sm:grid-cols-4">
+    <div className="grid grid-cols-2  h-fit gap-5 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
       <div className="w-[45vw] shadow-lg  h-[50vh] relative group sm:w-[20vw]">
         <div>
           {data

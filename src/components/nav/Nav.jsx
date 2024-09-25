@@ -26,7 +26,15 @@ function Nav() {
       </div>
       {CustomerSupport && (
         <div className="h-[30vh] w-[30vw] absolute bg-white z-30 right-2 mt-2 border-[3px] border-green-400">
-          Hello
+          <div className="flex items-center justify-center my-3 flex-col">
+            <img
+              onClick={handleCustomers}
+              className="w-[40px] h-[40px] rounded-full border-[5px] border-green-300 customerSupport sm:w-[60px] sm:h-[60px]"
+              src="https://lifetouch.com/wp-content/uploads/2020/07/F20_Hero_BokehLite_1Click_AG_8_2400x3000-scaled.jpg"
+              alt="customer Support"
+            />
+            <p>Welcome to Live Support</p>
+          </div>
         </div>
       )}
       {/* containg main Nav inputs */}
