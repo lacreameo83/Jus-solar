@@ -27,7 +27,6 @@ function Nav() {
       </div>
       {CustomerSupport && (
         <div className="h-[30vh] w-[30vw] absolute bg-white z-30 right-2 mt-2 border-[3px] border-green-400">
-          <FacebookMessenger />
           <div className="flex items-center justify-center my-3 flex-col">
             <img
               onClick={handleCustomers}
@@ -42,6 +41,9 @@ function Nav() {
       {/* containg main Nav inputs */}
       <div>
         <NavSection />
+      </div>
+      <div className="h-9 bg-slate-300">
+        <FacebookMessenger />
       </div>
     </div>
   );
