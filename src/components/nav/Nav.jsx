@@ -42,7 +42,7 @@ function Nav() {
       <div>
         <NavSection />
       </div>
-      <div className="h-9 bg-slate-300">
+      <div>
         <FacebookMessenger />
       </div>
     </div>
