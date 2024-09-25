@@ -1,5 +1,4 @@
 "use client";
-import { FacebookProvider, CustomChat } from "react";
 import { FacebookProvider, CustomChat } from "react-facebook";
 
 function FacebookMessenger() {
