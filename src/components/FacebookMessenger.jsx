@@ -5,7 +5,7 @@ function FacebookMessenger() {
   return (
     <div>
       <FacebookProvider appId="8317609354989517" chatSupport>
-        <CustomChat pageId="425823590606925" minimized={true} />
+        <CustomChat pageId="104015638377050" minimized={true} />
       </FacebookProvider>
     </div>
   );
