@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import image from "../../../public/jus-solar-logo.png";
 import SearchIcon from "@mui/icons-material/Search";
-import data from "../data";
+import { Globalcontext } from "../../context/Globalcontext";
+// import data from "../data";
 
 function NavSection() {
-  const [search, setSearch] = useState("");
-  const [filteredData, setFilteredData] = useState(data);
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-    SearchOutPut();
-  };
-
-  function SearchOutPut() {
-    const result = filteredData.filter((el) =>
-      el.tittle.toLowerCase().includes(search.toLowerCase())
-    );
-    setFilteredData(result);
-  }
+  const { search, handleSearch } = useContext(Globalcontext);
 
   // useEffect(() => {
   //   SearchOutPut();

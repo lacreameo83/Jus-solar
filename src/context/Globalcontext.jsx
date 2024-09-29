@@ -1,0 +1,39 @@
+import React, { createContext, useState } from "react";
+import data from "../components/data";
+
+export const Globalcontext = createContext(null);
+
+function GlobalContextProvider({ children }) {
+  const [search, setSearch] = useState("");
+  const [filteredData, setFilteredData] = useState(data);
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+    SearchOutPut(e.target.value);
+  };
+
+  function SearchOutPut(searchTerm) {
+    const result = data.filter((el) =>
+      el.tittle.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    if (result.length) {
+      setFilteredData(result);
+    } else {
+      setFilteredData([]);
+    }
+  }
+
+  return (
+    <Globalcontext.Provider
+      value={{
+        search,
+        handleSearch,
+        filteredData,
+      }}
+    >
+      {children}
+    </Globalcontext.Provider>
+  );
+}
+
+export default GlobalContextProvider;

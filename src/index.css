@@ -46,3 +46,26 @@ body {
     border: 2px solid green;
   }
 }
+
+.nothingFound {
+  animation-name: nothingFound;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes nothingFound {
+  0% {
+    color: red;
+  }
+  25% {
+    color: rgb(250, 179, 179);
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: rgb(196, 148, 148);
+  }
+  100% {
+    color: red;
+  }
+}

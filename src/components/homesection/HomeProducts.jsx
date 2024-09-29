@@ -18,15 +18,15 @@ function HomeProducts() {
       <p className="text-[#FFC000] text-center my-5 text-[15px]">
         Our Services
       </p>
-      <h2 className="font-900 text-[25px] stroke-black stroke-[20px] mb-12 text-center">
+      <h2 className="font-900 text-[30px]  mb-12 text-center">
         Sustainable Energy
       </h2>
 
       <div className="block sm:flex justify-around">
         <ServiceTemplate
           img="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/52/8551443/1.jpg?3740"
-          title="Solar Genarator"
-          uses="Yes, most solar generators today are designed with portability in mind. That’s because lithium-ion batteries are lighter and smaller than traditional deep-cycle batteries. More so, they come with handles with which you can carry the generator around with ease. However, solar generators can weigh up to 10 pounds, and they get heavier as the capacity increases"
+          title="Sales of Solar Product"
+          uses="Yth handles with which you can carry the generator around with ease. However, solar generators can weigh up to 10 pounds, and they get heavier as the capacity increases"
         />
         <ServiceTemplate
           img="https://arka360.com/ros/content/images/2023/05/pasted-image-0--11---1--compressed.jpg"

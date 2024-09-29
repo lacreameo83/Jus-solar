@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../components/nav/Nav";
 import { Outlet } from "react-router-dom";
 import AdvantageSolar from "../components/catalogueOutPuts.jsx/AdvantageSolar";
-// import FacebookMessenger from "../components/FacebookMessenger";
+import FacebookMessenger from "../components/FacebookMessenger";
 
 function NavPage() {
   return (
@@ -10,9 +10,7 @@ function NavPage() {
       <div className=" sticky top-0 z-20 bg-white">
         <Nav />
       </div>
-      {/* <div>
-        <FacebookMessenger />
-      </div> */}
+
       <Outlet />
       <AdvantageSolar />
     </div>

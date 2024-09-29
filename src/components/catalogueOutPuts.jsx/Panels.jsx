@@ -1,11 +1,20 @@
-import React from "react";
-import data from "../data";
+import React, { useContext } from "react";
+import { Globalcontext } from "../../context/Globalcontext";
 
 function Panels() {
+  const { filteredData } = useContext(Globalcontext);
   return (
     <div>
+      {/* if no data */}
+      {filteredData.length ? (
+        filteredData.map((item) => <div key={item.id}>{item.title}</div>)
+      ) : (
+        <div className="text-red-500 nothingFound font-medium">
+          Nothing found
+        </div>
+      )}
       <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
-        {data
+        {filteredData
           .filter((el) => el.categories === " Solar Panal")
           .map((el) => (
             <div className="">
