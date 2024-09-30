@@ -5,7 +5,6 @@ function Camera() {
   const { filteredData } = useContext(Globalcontext);
   return (
     <div>
-      {/* if no data */}
       {filteredData.length ? (
         filteredData.map((item) => <div key={item.id}>{item.title}</div>)
       ) : (
