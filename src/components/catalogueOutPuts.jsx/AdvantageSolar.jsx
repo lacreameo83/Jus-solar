@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import EmailTemplate from "../../templates/EmailTemplate";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -8,6 +8,25 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import image from "../../../public/jus-solar-logo.png";
 
 function AdvantageSolar() {
+  const [email, setEmail] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(true);
+
+  function handleInput(event) {
+    setEmail(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (email === "" || !/\S+@\S+\.\S+/.test(email)) {
+      setIsEmailValid(false);
+    } else {
+      setIsEmailValid(true);
+      alert(`Thank you for subscribing with ${email}`);
+      setEmail("");
+    }
+  }
+
   return (
     <div className="relative h-[103vh] py-10 bg-[#34495e] text-white mt-[70px] sm:h-[40vh]">
       <div className="bg-[#f5b041] h-[11vh] w-[100%] m-auto rounded-tr-2xl  rounded-tl-2xl absolute top-[-40px] flex  justify-around items-center">
@@ -81,16 +100,26 @@ function AdvantageSolar() {
           </ul>
         </div>
         <div>
-          <h2 className="mb-3 hover:text-[#f5b041] font-[800]">Newsletter</h2>
-          <p>Our company our pride</p>
-          <input
-            className="p-[3px] bg-transparent border-stone-300 border-[2px] my-5 block w-[200px] sm:p-[10px]"
-            placeholder="email"
-            type="email"
-          />
-          <Button variant="contained" style={{ background: "#f5b041 " }}>
-            SUBSCRIBE
-          </Button>
+          <form onSubmit={handleSubmit}>
+            <h2 className="mb-3 hover:text-[#f5b041] font-[800]">Newsletter</h2>
+            <p>Our company our pride</p>
+
+            <input
+              className="p-[3px] bg-transparent border-stone-300 border-[2px] my-5 block w-[200px] sm:p-[10px]"
+              type="email"
+              placeholder="Enter your email address here"
+              value={email}
+              onChange={handleInput}
+            />
+            {!isEmailValid ? <p>Please enter a valid email address</p> : null}
+            <Button
+              type="submit"
+              variant="contained"
+              style={{ background: "#f5b041 " }}
+            >
+              SUBSCRIBE
+            </Button>
+          </form>
         </div>
       </div>
     </div>
