@@ -1,4 +1,3 @@
-import React from "react";
 import { NavPage, Home, AboutPage, ContactPage, CataloguePage } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

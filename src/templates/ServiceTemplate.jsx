@@ -1,5 +1,3 @@
-import React from "react";
-
 function ServiceTemplate({ img, title, uses }) {
   return (
     <div className="w-[100%] mb-10 relative border-[1px] shadow-lg  h-[30vh] flex flex-col  items-center p-4 sm:w-[30%] ">

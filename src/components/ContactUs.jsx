@@ -1,4 +1,3 @@
-import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CallIcon from "@mui/icons-material/Call";
@@ -14,7 +13,7 @@ function ContactUs() {
         <div className="flex flex-col justify-evenly p-4">
           <div>
             <h2 className="font-bold text-[25px] my-2">
-              We'd Love to Hear From You, Lets Get In Touch!
+              We&apos;d Love to Hear From You, Lets Get In Touch!
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-7">

@@ -1,5 +1,3 @@
-import React from "react";
-
 function EmailTemplate({ logo, location, address }) {
   return (
     <div className="flex  justify-center items-center gap-5">

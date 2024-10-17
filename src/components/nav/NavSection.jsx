@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { Link } from "react-router-dom";
 import image from "../../../public/jus-solar-logo.png";
 import SearchIcon from "@mui/icons-material/Search";

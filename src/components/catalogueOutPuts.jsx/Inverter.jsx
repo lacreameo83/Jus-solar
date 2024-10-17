@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useContext } from "react";
 import { Globalcontext } from "../../context/Globalcontext";
 
@@ -19,12 +19,9 @@ function Inverter() {
         {filteredData
           .filter((el) => el.categories === "Inverter")
           .map((el) => (
-            <div className="">
+            <div key={el.id} className="">
               <div className="shadow-lg ">
-                <p
-                  key={el.id}
-                  className="text-center p-3 text-[1.1em] font-semibold"
-                >
+                <p className="text-center p-3 text-[1.1em] font-semibold">
                   {el.tittle}
                 </p>
                 <img className="h-[250px] w-[250px]" src={el.image} />

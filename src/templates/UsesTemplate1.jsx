@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function UsesTemplate1({ Heading, Purpose, image, Link }) {
   return (

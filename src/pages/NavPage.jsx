@@ -1,8 +1,8 @@
-import React from "react";
+
 import Nav from "../components/nav/Nav";
 import { Outlet } from "react-router-dom";
 import AdvantageSolar from "../components/catalogueOutPuts.jsx/AdvantageSolar";
-import FacebookMessenger from "../components/FacebookMessenger";
+
 
 function NavPage() {
   return (

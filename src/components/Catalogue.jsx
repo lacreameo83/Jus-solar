@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Inverter from "./catalogueOutPuts.jsx/Inverter";
 import Batteries from "./catalogueOutPuts.jsx/Batteries";
 import Camera from "./catalogueOutPuts.jsx/Camera";

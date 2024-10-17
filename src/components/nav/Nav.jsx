@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import NavSection from "./NavSection";
-import { Button } from "@mui/material";
-import FacebookMessenger from "../FacebookMessenger";
+
+
 
 function Nav() {
   const [CustomerSupport, setCoustomerSupport] = useState(false);
@@ -42,9 +42,7 @@ function Nav() {
       <div>
         <NavSection />
       </div>
-      <div>
-        <FacebookMessenger />
-      </div>
+      
     </div>
   );
 }

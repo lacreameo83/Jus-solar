@@ -1,7 +1,5 @@
-import React, { useContext, useState } from "react";
-import data from "../data";
+import { useContext } from "react";
 import { Button } from "@mui/material";
-import Inverter from "./Inverter";
 import { Globalcontext } from "../../context/Globalcontext";
 
 function AlProducts() {
@@ -21,7 +19,7 @@ function AlProducts() {
           {filteredData
             .filter((el) => el.id === 5)
             .map((el) => (
-              <div>
+              <div key={el.key}>
                 <h2 className="py-3 text-center font-medium text-[18px]">
                   Inverter
                 </h2>
@@ -42,7 +40,7 @@ function AlProducts() {
         {filteredData
           .filter((el) => el.id === 10)
           .map((el) => (
-            <div>
+            <div key={el.id}>
               <h2 className="py-3 text-center font-medium text-[18px]">MTTP</h2>
 
               <img className="h-[250px]" src={el.image} />
@@ -59,7 +57,7 @@ function AlProducts() {
         {filteredData
           .filter((el) => el.id === 14)
           .map((el) => (
-            <div>
+            <div key={el.id}>
               <h2 className="py-3 text-center font-medium text-[18px]">
                 CCTV Solar Camera
               </h2>
@@ -78,7 +76,7 @@ function AlProducts() {
         {filteredData
           .filter((el) => el.id === 18)
           .map((el) => (
-            <div>
+            <div key={el.id}>
               <h2 className="py-3 text-center font-medium text-[18px]">
                 Solar Powered Fan
               </h2>
@@ -97,7 +95,7 @@ function AlProducts() {
         {filteredData
           .filter((el) => el.id === 22)
           .map((el) => (
-            <div>
+            <div key={el.key}>
               <h2 className="py-3 text-center font-medium text-[18px]">
                 Mobile Genaratior
               </h2>
@@ -116,7 +114,7 @@ function AlProducts() {
         {filteredData
           .filter((el) => el.id === 25)
           .map((el) => (
-            <div>
+            <div key={el.id}>
               <h2 className="py-3 text-center font-medium text-[18px]">
                 Batterie
               </h2>
@@ -134,7 +132,7 @@ function AlProducts() {
         {filteredData
           .filter((el) => el.id === 20)
           .map((el) => (
-            <div>
+            <div key={el.id}>
               <h2 className="py-3 text-center font-medium text-[18px]">
                 Solar Sreet Light
               </h2>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import SimpleSlider from "../components/homesection/Home";
 import HomeProducts from "../components/homesection/HomeProducts";
 import UsesOfSolarPanel from "../components/homesection/UsesOfSolarPanel";

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { Globalcontext } from "../../context/Globalcontext";
 
 function Camera() {
@@ -16,7 +16,7 @@ function Camera() {
         {filteredData
           .filter((el) => el.categories === "Solar Camera")
           .map((el) => (
-            <div className="">
+            <div key={el.id}>
               <div className="shadow-lg ">
                 <p
                   key={el.id}

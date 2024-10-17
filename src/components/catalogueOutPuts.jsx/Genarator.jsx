@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import data from "../data";
+import { useContext } from "react";
+
 import { Globalcontext } from "../../context/Globalcontext";
 
 function Genarator() {
@@ -18,12 +18,9 @@ function Genarator() {
         {filteredData
           .filter((el) => el.categories === "Mobile Genarator")
           .map((el) => (
-            <div className="">
+            <div key={el.id} className="">
               <div className="shadow-lg ">
-                <p
-                  key={el.id}
-                  className="text-center p-3 text-[1.1em] font-semibold"
-                >
+                <p className="text-center p-3 text-[1.1em] font-semibold">
                   {el.tittle}
                 </p>
                 <img className="h-[250px] w-[250px]" src={el.image} />

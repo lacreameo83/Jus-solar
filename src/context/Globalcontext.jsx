@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import data from "../components/data";
 
 export const Globalcontext = createContext(null);
@@ -18,6 +18,10 @@ function GlobalContextProvider({ children }) {
     );
     if (result.length) {
       setFilteredData(result);
+      setTimeout(() => {
+        setSearch("");
+        setFilteredData(data);
+      }, 3000);
     } else {
       setFilteredData([]);
     }

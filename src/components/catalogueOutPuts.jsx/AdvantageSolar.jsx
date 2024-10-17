@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 import EmailTemplate from "../../templates/EmailTemplate";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";

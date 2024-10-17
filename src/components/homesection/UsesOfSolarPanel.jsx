@@ -1,4 +1,4 @@
-import React from "react";
+
 import Slider from "react-slick";
 import UsesTemplate1 from "../../templates/UsesTemplate1";
 import UsesTemplate2 from "../../templates/UsesTemplate2";
