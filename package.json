@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "jussolarwebsite",
+=======
+  "name": "jussolar",
+>>>>>>> a045abbb36660cdf25fa6393f8774c35ee18d6d0
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,15 +20,22 @@
     "@mui/icons-material": "^6.1.0",
     "@mui/material": "^6.1.0",
     "@mui/styled-engine-sc": "^6.1.0",
+<<<<<<< HEAD
     "aos": "^2.3.4",
+=======
+>>>>>>> a045abbb36660cdf25fa6393f8774c35ee18d6d0
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0",
+<<<<<<< HEAD
     "react-router": "6.4",
     "react-router-dom": "^6.4.2",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
+=======
+    "react-router": "^6.26.2",
+>>>>>>> a045abbb36660cdf25fa6393f8774c35ee18d6d0
     "styled-components": "^6.1.13",
     "zod": "^3.23.8"
   },

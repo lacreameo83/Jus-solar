@@ -1,3 +1,4 @@
+
 import { NavPage, Home, AboutPage, ContactPage, CataloguePage } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -23,11 +24,12 @@ const router = createBrowserRouter([
         element: <CataloguePage />,
       },
     ],
-  },
-]);
+  }] )
+
 
 function App() {
   return <RouterProvider router={router} />;
+
 }
 
 export default App;
